@@ -28,7 +28,7 @@ connection.connect(function(err) {
 // Api Routes
 
 app.get('/', function(req, res) {
-	let query = `SELECT magnitude, place, time, longitude, lattitude
+	let query = `SELECT id, magnitude, place, time, longitude, lattitude
 	FROM earthquake
 	ORDER BY magnitude DESC
 	LIMIT 2`;
